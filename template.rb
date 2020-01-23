@@ -49,11 +49,11 @@ class SlackUp
     jira_id = body[JIRA_ID_REGEX, 1]
 
     @slackup_post = <<~END
-      Ticket:  #{JIRA_BASE}/#{jira_id}
-      PR:      #{GITHUB_WEB_BASE}/#{@pr_id}
-      Title:   #{title}
-      Deploy:  #{@deploy_message}
-      Update:  #{@update_message}
+      *Ticket*:  #{JIRA_BASE}/#{jira_id}
+      *PR*:      #{GITHUB_WEB_BASE}/#{@pr_id}
+      *Title*:   #{title}
+      *Deploy*:  #{@deploy_message}
+      *Update*:  #{@update_message}
     END
   end
 
