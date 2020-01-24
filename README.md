@@ -15,6 +15,10 @@ AUTHORIZATION_TOKEN = "YOUR-GITHUB-API-AUTH-TOKEN"
 SLACK_WEB_HOOK      = "https://hooks.slack.com/services/YOUR-SLACK-WEBHOOK"
 ```
 
+Note - your GITHUB-API-AUTH-TOKEN can be found in github->settings->developer settings
+`https://github.com/settings/apps`
+When it prompts for scope permission, I granted `repo`.
+
 3. If you're using the `template_with_images.rb`, you'll need to include links to your preferred images at the bottom.
 
 4. Run from anywhere with an alias. This step depends on which file you want to run.
